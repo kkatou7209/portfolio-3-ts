@@ -1,0 +1,16 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-react",
+        "tsint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "prettier": true,
+        "interface-name": false
+    },
+    "rulesDirectory": [
+        "tslint-plugin-prettier"
+    ]
+}
