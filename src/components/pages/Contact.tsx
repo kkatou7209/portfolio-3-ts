@@ -1,18 +1,15 @@
+import { business } from "../index";
+
 const Contact = () => {
-  let business: string[] = [
-    'Webページの作成',
-    'UI画面のデザイン・作成',
-    'JavaScriptを使った内部機能の作成'
-  ]
 
   return (
     <>
-      <h2>Contact</h2>
+      <h2 className='l-page__title text--large'>Contact</h2>
       <div id='l-contact'>
         {/* 連絡フォームの記述 */}
         <form>
           {/* 名前の入力 */}
-          <label htmlFor='input__name'>
+          <label>
             お名前をどうぞ。
             <input
               className='input__name last-name'
@@ -34,11 +31,10 @@ const Contact = () => {
             </input>
           </label>
           {/* メールアドレスの入力 */}
-          <label htmlFor='input__email'>
+          <label>
             メールアドレスをお願いします。
             <input
               className='input__email'
-              name='input__name'
               type='email'
               placeholder="メールアドレス"
               required
@@ -46,19 +42,18 @@ const Contact = () => {
             </input>
           </label>
           {/* 用件の選択 */}
-          <label htmlFor='option__business'>
+          <label>
             ご用件をお伺いします。
-            {business.map((item: string, key: number) => {
-              key++;
+            {business.map((item, key) => {
               return (
                 <div key={key.toString()}>
+                  <input
+                    className={'option__business item' + key.toString()}
+                    type='checkbox'
+                    name='option__business'
+                  />
                   <label>
-                    <input
-                      className={'option__business item' + key.toString()}
-                      type='checkbox'
-                      name='option__business'
-                    />
-                    {item}
+                    {item.title}
                   </label>
                 </div>
               )

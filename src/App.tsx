@@ -4,6 +4,7 @@ import { Header, Main, Footer, Contact } from './components';
 //import styles
 import './assets/Base.scss';
 import './assets/Layout.scss';
+import './assets/Module.scss';
 
 
 function App() {
