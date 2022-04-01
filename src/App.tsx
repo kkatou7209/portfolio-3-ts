@@ -1,5 +1,5 @@
 //import base component
-import { Header, Main, Footer, Contact } from './components';
+import { Header, Main, Footer } from './components';
 
 //import styles
 import './assets/Base.scss';

@@ -7,13 +7,15 @@ const Header = () => {
     <>
       <header id='l-header'>
         <div id="l-logo">
-            <div className='logo__text'><Link to='/'>NOTEMAN</Link></div>
+            <div className='logo__text'>
+              <Link to='/' className='text--smaller'>NOTEMAN</Link>
+            </div>
         </div>
         <nav id='l-nav__header'>
           {navItem.map((item, key) => {
             return (
               <li className='nav__item' key={key.toString()}>
-                <Link to={`/${item.link}`}>{item.linkText}</Link>
+                <Link to={`/${item.link}`} className='text--smaller'>{item.linkText}</Link>
               </li>
             )
           })}

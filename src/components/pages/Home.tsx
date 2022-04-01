@@ -7,23 +7,31 @@ const Home =() => {
   return (
     <>
       <div id='l-top'>
-        <h1 className='top__title'>NOTEMAN</h1>
-        <p className='top__text'>
-          哲学好きが作る、クライアントのために考え抜かれたWebサイト制作。
+        <h1 id='l-top__title' className='text--larger'>NOTEMAN</h1>
+        <p id='l-top__text' className='text--smallest line--medium'>
+          哲学好きが作る、
+          <br/>
+          クライアントのために考え抜かれたWebサイト制作。
         </p>
-        <nav className='l-nav__top'>
-          {navItem.map((item, key: number) => {
-            return (
-              <li className='nav__item' key={key.toString()}>
-                <Link to={`/${item.link}`}>{item.linkText}</Link>
-                <p className='text'>
+      </div>
+      <nav id='l-nav__home'>
+        {navItem.map((item, key: number) => {
+          return (
+            <li className='l-nav__item' key={key.toString()}>
+              <div className='l-nav__title'>
+                <Link to={`/${item.link}`} className='text--large'>
+                  {item.linkText}
+                </Link>
+              </div>
+              <div className='l-text'>
+                <p className='text text--smallest'>
                   {item.text}
                 </p>
-              </li>
-            );
-          })}
-        </nav>
-      </div>
+              </div>
+            </li>
+          );
+        })}
+      </nav>
     </>
   )
 }

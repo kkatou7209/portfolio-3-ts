@@ -2,12 +2,7 @@ export const navItem = [
   {
     link: 'about',
     linkText: 'About',
-    text: 'サイトを作る上でのモットーは何か'
-  },
-  {
-    link: 'bio',
-    linkText: 'Bio',
-    text: 'エンジニアについての紹介'
+    text: '制作可能なサイトとエンジニア自身について'
   },
   {
     link: 'contact',

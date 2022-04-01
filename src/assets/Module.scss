@@ -1,14 +1,45 @@
 
 
 //テキストのスタイル
-.text--large {
+.text--largest {
+  font-size: 4rem;
+}
+
+.text--larger {
   font-size: 3rem;
 }
 
-.text--midium {
+.text--large {
+  font-size: 2rem;
+}
+
+.text--medium {
   font-size: 1.5rem;
+}
+
+.text--small {
+  font-size: 1.3rem;
+}
+
+.text--smaller {
+  font-size: 1rem;
+}
+
+.text--smallest {
+  font-size: 0.9rem;
 }
 
 .text--center {
   text-align: center;
+}
+
+
+//line-hight
+
+.line--wide {
+  line-height: 2.5rem;
+}
+
+.line--medium {
+  line-height: 1.5rem;
 }

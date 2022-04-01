@@ -1,22 +1,31 @@
+
 #l-container {
   margin: 0;
 
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  width: 100vw;
+
+  position: absolute;
+  top: 0;
 
   #l-header {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 
-    height: 3rem;
+    width: 90vw;
+    height: 4rem;
 
     position: fixed;
     top: 0;
 
     #l-logo {
-
+      margin-bottom: 16px; margin-bottom: 1rem;
     }
     #l-nav__header {
+      width: 100%;
+
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -24,18 +33,41 @@
   }
 
   #l-main {
-    margin-top: 3.5rem;
+    margin-top: 5.5rem;
     margin-bottom: 1rem;
 
-    height: 40rem;
     #l-page {
       overflow: hidden;
+
+      #l-top {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+
+        #l-top__title {
+          margin-bottom: 1rem;
+        }
+      }
+
+      #l-nav__home {
+
+        .l-nav__item {
+          margin-bottom: 4rem;
+
+          .l-nav__title {
+            margin-bottom: 1rem;
+          }
+
+          .l-text {
+            margin-left: 1rem;
+          }
+        }
+      }
 
       .l-page__title {
         margin-top: 2rem;
         margin-bottom: 2rem;
       }
-      .l-about__section {
+      .l-about__article {
         margin-bottom: 1rem;
       }
 
