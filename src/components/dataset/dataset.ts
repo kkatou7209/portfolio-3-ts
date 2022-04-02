@@ -16,7 +16,7 @@ export const navItem = [
   },
 ]
 
-export const aboutSection = [
+export const aboutArticle = [
   {
     title: '軽量かつ高速',
     text: `表示速度の速さはSEOにとっても重要な項目です。\nより大勢に皆さんのWebサイトを訪れてもらえるよう、コードの軽量化、レスポンスの高速化に努めます。`

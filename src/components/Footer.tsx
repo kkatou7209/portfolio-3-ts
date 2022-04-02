@@ -9,8 +9,10 @@ const Footer = () => {
       <nav id='l-nav__footer'>
         {navItem.map((item, key) => {
           return (
-            <li className='nav__item' key={key.toString()}>
-              <Link to={`/${item.link}`}>{item.linkText}</Link>
+            <li className='l-nav__item' key={key.toString()}>
+              <Link to={`/${item.link}`} className='text--smaller'>
+                {item.linkText}
+              </Link>
             </li>
           )
         })}

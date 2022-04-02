@@ -1,4 +1,3 @@
-
 #l-container {
   margin: 0;
 
@@ -6,12 +5,13 @@
   padding-right: 5vw;
 
   width: 100vw;
+  height: 100vh;
 
   position: absolute;
   top: 0;
 
   #l-header {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 
     width: 90vw;
@@ -39,6 +39,12 @@
     #l-page {
       overflow: hidden;
 
+      .l-page__title {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+
+      //<Home />
       #l-top {
         margin-top: 2rem;
         margin-bottom: 4rem;
@@ -63,12 +69,72 @@
         }
       }
 
-      .l-page__title {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+      //<About />
+      .l-about__section {
+        margin-bottom: 3rem;
+
+        .l-section__title {
+          margin-bottom: 2rem;
+        }
+
+        .l-about__article {
+          margin-bottom: 4rem;
+
+          .l-article__title {
+            margin-bottom: 1rem;
+          }
+
+          .text {
+            margin-bottom: 0.5rem;
+          }
+        }
       }
-      .l-about__article {
-        margin-bottom: 1rem;
+
+      //<Contact />
+      #l-form {
+
+        .l-form__section {
+          margin-bottom: 6rem;
+
+          .section__title {
+            margin-bottom: 1.5rem;
+          }
+
+          .section__name {
+            height: 4rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .input__name {
+              width: 8rem;
+
+            }
+          }
+
+          .section__email {
+            .input__email {
+              width: 15rem;
+            }
+          }
+
+          .section__business {
+            .business__option {
+              height: 3rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .option__item {
+
+                input {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
       }
 
 
@@ -78,6 +144,10 @@
   #l-footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    .l-nav__item {
+      margin-bottom: 2rem;
+    }
 
   }
 }

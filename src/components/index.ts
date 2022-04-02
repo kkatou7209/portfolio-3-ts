@@ -12,6 +12,6 @@ export { default as Service } from './pages/Service';
 //データセット
 export {
   navItem,
-  aboutSection,
+  aboutArticle,
   business
 } from './dataset/dataset';

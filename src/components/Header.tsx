@@ -5,7 +5,7 @@ import { navItem } from "./index";
 const Header = () => {
   return (
     <>
-      <header id='l-header'>
+      <header id='l-header' className='bg-white'>
         <div id="l-logo">
             <div className='logo__text'>
               <Link to='/' className='text--smaller'>NOTEMAN</Link>

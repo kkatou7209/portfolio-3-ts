@@ -1,45 +1,60 @@
-
-
-//テキストのスタイル
-.text--largest {
-  font-size: 4rem;
+//display 
+.block {
+  display: block;
 }
 
-.text--larger {
-  font-size: 3rem;
+//border
+.border-bottom {
+  border-bottom: 1px solid;
 }
 
-.text--large {
-  font-size: 2rem;
-}
+//text
+  //font-size
+  .text--largest {
+    font-size: 4rem;
+  }
 
-.text--medium {
-  font-size: 1.5rem;
-}
+  .text--larger {
+    font-size: 3rem;
+  }
 
-.text--small {
-  font-size: 1.3rem;
-}
+  .text--large {
+    font-size: 2rem;
+  }
 
-.text--smaller {
-  font-size: 1rem;
-}
+  .text--medium {
+    font-size: 1.5rem;
+  }
 
-.text--smallest {
-  font-size: 0.9rem;
-}
+  .text--small {
+    font-size: 1.3rem;
+  }
 
-.text--center {
-  text-align: center;
-}
+  .text--smaller {
+    font-size: 1rem;
+  }
+
+  .text--smallest {
+    font-size: 0.7rem;
+  }
+
+  //text-align
+  .text--center {
+    text-align: center;
+  }
 
 
-//line-hight
+  //line-hight
+  .line--wide {
+    line-height: 2.5rem;
+  }
 
-.line--wide {
-  line-height: 2.5rem;
-}
+  .line--medium {
+    line-height: 1.5rem;
+  }
 
-.line--medium {
-  line-height: 1.5rem;
+//background
+
+.bg-white {
+  background-color: white;
 }
