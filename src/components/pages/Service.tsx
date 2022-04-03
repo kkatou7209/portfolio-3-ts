@@ -3,7 +3,9 @@ import { business } from "../index";
 const Service = () => {
   return (
     <>
-      <h2 className='l-page__title text--large'>Service</h2>
+      <h2 className='l-page__title text--larger'>
+        Service
+      </h2>
       <ul className='services'>
         {business.map((item, key)=> {
           return (

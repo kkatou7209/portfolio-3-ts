@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <div className='l-page__title'>
-        <h2 className='page__title text--large'>About</h2>
+        <h2 className='page__title text--larger'>About</h2>
       </div>
       <section className='l-about__section'>
         <div className='l-section__title'>
@@ -18,14 +18,14 @@ const About = () => {
           return (
             <article className='l-about__article' key={key}>
               <div className='l-article__title'>
-                <h4 className='article__title text--smaller'>
+                <h4 className='article__title text--small'>
                   {item.title}
                 </h4>
               </div>
               {line.map((value, key) => {
                 key.toString();
                 return (
-                  <p className='text text--smallest line--medium' key={key}>
+                  <p className='text text--smallest line--small' key={key}>
                     {value}
                   </p>
                 )
@@ -41,7 +41,7 @@ const About = () => {
           </h3>
         </div>
         <article className='l-about__article'>
-          <h4 className='article__title text--small'></h4>
+          <h4 className='article__title text--medium'></h4>
         </article>
       </section>
     </>

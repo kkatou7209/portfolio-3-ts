@@ -8,7 +8,7 @@ const Header = () => {
       <header id='l-header' className='bg-white'>
         <div id="l-logo">
             <div className='logo__text'>
-              <Link to='/' className='text--smaller'>NOTEMAN</Link>
+              <Link to='/' className='text--smallesr'>NOTEMAN</Link>
             </div>
         </div>
         <nav id='l-nav__header'>

@@ -4,7 +4,7 @@ const Contact = () => {
 
   return (
     <>
-      <h2 className='l-page__title text--large'>
+      <h2 className='l-page__title text--larger'>
         Contact
       </h2>
       <div id='l-form'>
@@ -13,7 +13,7 @@ const Contact = () => {
           
           {/* 名前の入力 */}
           <section className='l-form__section'>
-            <label className='section__title text--smaller block'>
+            <label className='section__title text--smallest block'>
               お名前
             </label>
             <div className='section__name'>
@@ -44,7 +44,7 @@ const Contact = () => {
 
           {/* メールアドレスの入力 */}
           <section className='l-form__section'>
-            <label className='section__title text--smaller block' htmlFor='email'>
+            <label className='section__title text--smallest block' htmlFor='email'>
               メールアドレス
             </label>
             <div className='section__email'>
@@ -60,7 +60,7 @@ const Contact = () => {
 
           {/* 用件の選択 */}
           <section className='l-form__section'>
-            <label className='section__title text--smaller block'>
+            <label className='section__title text--smallest block'>
               ご依頼内容
             </label>
             <div className='section__business'>
