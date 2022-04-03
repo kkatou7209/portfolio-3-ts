@@ -14,30 +14,28 @@ const Contact = () => {
           {/* 名前の入力 */}
           <section className='l-form__section'>
             <label className='section__title text--smaller block'>
-              お名前お願いします。
+              お名前
             </label>
             <div className='section__name'>
-              <label>
-                姓
+              <label className='text--smallest'>
                 <input
                   id='last-name'
-                  className='input__name border-bottom'
+                  className='input__name border-bottom text--smallest'
                   type='text'
                   min={1}
                   max={10}
-                  // placeholder='姓'
+                  placeholder='姓'
                   required
                 />
               </label>
-              <label>
-                名
+              <label className='text--smallest'>
                 <input
                   id='first-name'
-                  className='input__name border-bottom'
+                  className='input__name border-bottom text--smallest'
                   type='text'
                   min={1}
                   max={10}
-                  // placeholder='名'
+                  placeholder='名'
                   required
                 />
               </label>
@@ -47,7 +45,7 @@ const Contact = () => {
           {/* メールアドレスの入力 */}
           <section className='l-form__section'>
             <label className='section__title text--smaller block' htmlFor='email'>
-              メールアドレスをお願いします。
+              メールアドレス
             </label>
             <div className='section__email'>
               <input
@@ -63,7 +61,7 @@ const Contact = () => {
           {/* 用件の選択 */}
           <section className='l-form__section'>
             <label className='section__title text--smaller block'>
-              ご用件をお伺いします。
+              ご依頼内容
             </label>
             <div className='section__business'>
               <div className='business__option'>
@@ -72,7 +70,7 @@ const Contact = () => {
                   let option: string = item.option;
                   let title: string = item.title;
                   return (
-                    <div key={key} className='option__item'>
+                    <div key={key} className='option__item text--smallest'>
                       <input
                         id={option}
                         type='checkbox'
